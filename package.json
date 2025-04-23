@@ -7,7 +7,7 @@
     "dev": "pnpm --filter @Warm-UI/play dev",
     "docs:dev": "pnpm --filter @Warm-UI/docs dev",
     "docs:build": "pnpm --filter @Warm-UI/docs build",
-    "test": "echo \"todo\""
+    "test": "pnpm --filter @Warm-UI/components test"
   },
   "keywords": [],
   "author": "",

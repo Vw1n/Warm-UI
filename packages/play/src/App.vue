@@ -3,7 +3,7 @@ import { WarmButton } from '../../components';
 </script>
 
 <template>
-  <WarmButton />
+  <WarmButton type="primary" size="small">test</WarmButton>
 </template>
 
 <style scoped>
@@ -13,9 +13,11 @@ import { WarmButton } from '../../components';
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
