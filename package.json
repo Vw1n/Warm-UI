@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm --filter @Warm-UI/play dev",
+    "story": "pnpm --filter @Warm-UI/play storybook",
     "docs:dev": "pnpm --filter @Warm-UI/docs dev",
     "docs:build": "pnpm --filter @Warm-UI/docs build",
     "test": "pnpm --filter @Warm-UI/components test"
