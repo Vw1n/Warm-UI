@@ -66,6 +66,8 @@ export const Default: Story & { args: { content: string } } = {
   args: {
     type: "primary",
     content: "Button",
+    throttleDuration: 500,
+    useThrottle: true
   },
   render: (args: any) => ({
     components: { WarmButton },

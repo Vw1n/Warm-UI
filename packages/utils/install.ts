@@ -3,6 +3,7 @@ import { each } from "lodash-es";
 
 type SFCWithInstall<T> = T & Plugin;
 
+// 批量组件安装器
 export function makeInstaller(components: Plugin[]) {
   const install = (app: App) =>
     each(components, (c) => {
@@ -12,6 +13,7 @@ export function makeInstaller(components: Plugin[]) {
   return install;
 }
 
+// 单个组件安装器
 export const withInstall = <T>(component: T) => {
   (component as SFCWithInstall<T>).install = (app: App) => {
     const name = (component as any)?.name || "UnnamedComponent";
